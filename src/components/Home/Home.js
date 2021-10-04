@@ -12,6 +12,8 @@ const Home = () => {
         .then(data => setServices(data))
     },[]);
     return (
+
+
 // slider with login form
         <div>
             <Carousel className="mt-5 mb-5">
@@ -21,10 +23,9 @@ const Home = () => {
       src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2019/10/Driver-Eye-Movement-MOTR-Story-10-22-19.png"
       alt="First slide"
     />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      <Form>
+    <Carousel.Caption className="text-white text-start">
+      <h3>The best drivers are aware that they must be beware.</h3>
+      <Form className="bg-success p-3 rounded w-50">
   <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
     <Form.Label column sm={2}>
       Email
@@ -43,31 +44,6 @@ const Home = () => {
     </Col>
   </Form.Group>
   <fieldset>
-    <Form.Group as={Row} className="mb-3">
-      <Form.Label as="legend" column sm={2}>
-        Radios
-      </Form.Label>
-      <Col sm={10}>
-        <Form.Check
-          type="radio"
-          label="first radio"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios1"
-        />
-        <Form.Check
-          type="radio"
-          label="second radio"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios2"
-        />
-        <Form.Check
-          type="radio"
-          label="third radio"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios3"
-        />
-      </Col>
-    </Form.Group>
   </fieldset>
   <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
     <Col sm={{ span: 10, offset: 2 }}>
@@ -89,9 +65,8 @@ const Home = () => {
       src="https://www.assurancedrivingschool.com.au/wp-content/uploads/2020/09/Male-Driving-Instructor.jpg"
       alt="Second slide"
     />
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <Carousel.Caption className="text-warning">
+      <h3>Alert today – Alive tomorrow</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -99,9 +74,8 @@ const Home = () => {
       className="d-block w-75 mx-auto"
       src="https://media.istockphoto.com/photos/cute-young-success-happy-brunette-woman-is-driving-a-car-picture-id1223392906?k=20&m=1223392906&s=612x612&w=0&h=synhQ0D3qMYilpP6ZRJsnXPigBSXnbv4jFZLAeXqrLY=" alt="Third slide"
     />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <Carousel.Caption className="text-warning">
+      <h3>If you know you are driving to your death –would you still drive so fast?</h3>
     </Carousel.Caption>
    
   </Carousel.Item>

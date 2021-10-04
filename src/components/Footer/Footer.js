@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <Card className="bg-dark text-white mt-5">
-  <Card.Img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1020317514%2F960x0.jpg%3Ffit%3Dscale" height="300px" alt="Card image" />
+  <Card.Img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-blue-atmospheric-background-image_50584.jpg" height="300px" alt="Card image" />
   <Card.ImgOverlay>
     <Card.Title>Card title</Card.Title>
     <Card.Text>
