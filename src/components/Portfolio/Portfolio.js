@@ -30,7 +30,7 @@ const Portfolio = () => {
 
 {/* chart start */}
 <div>
-<h1 className="text-center text-success">Our Successes</h1>
+<h1 className="text-center text-success">Our Successful Rides</h1>
         <PieChart className="mx-auto" width={400} height={400}>
           <Pie
             dataKey="value"
@@ -46,34 +46,38 @@ const Portfolio = () => {
         </PieChart>
       
 </div>
+
+
+{/* table start */}
 <div>
-<h1 className="text-center text-success">Our Instructors</h1>
-<Table striped bordered hover>
-  <thead>
+<h1 className="text-center text-success m-5">Our Star Students</h1>
+<Table className="m-5 w-75 mx-auto" striped bordered hover>
+  <thead className="text-center text-white">
     <tr>
-      <th>#</th>
+      <th></th>
       <th>First Name</th>
       <th>Last Name</th>
-      <th>Username</th>
+      <th>Driving Experience</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr className="text-center text-white">
       <td>1</td>
       <td>Mark</td>
       <td>Otto</td>
-      <td>@mdo</td>
+      <td>15 years</td>
     </tr>
-    <tr>
+    <tr  className="text-center text-white">
       <td>2</td>
       <td>Jacob</td>
       <td>Thornton</td>
-      <td>@fat</td>
+      <td>10 years</td>
     </tr>
-    <tr>
-      <td>3</td>
-      <td colSpan="2">Larry the Bird</td>
-      <td>@twitter</td>
+    <tr  className="text-center text-white">
+      <td>2</td>
+      <td>Tea</td>
+      <td>Ryna</td>
+      <td>7 years</td>
     </tr>
   </tbody>
 </Table>
