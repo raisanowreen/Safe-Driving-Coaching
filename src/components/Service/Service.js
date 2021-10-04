@@ -3,7 +3,8 @@ import React from 'react';
 const Service = (props) => {
     const {img, name, price, instructor} =props.service;
     return (  
-      <div class="col">
+      <div>
+ <div class="col">
       <div class="card p-3 w-75 mx-auto h-100">
         <img src={img} class="card-img-top" alt="..."/>
         <div class="card-body p-4">
@@ -13,7 +14,7 @@ const Service = (props) => {
         </div>
       </div>
     </div>
-  
+      </div>
      
     );
 };

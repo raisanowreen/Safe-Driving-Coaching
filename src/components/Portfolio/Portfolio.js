@@ -1,15 +1,15 @@
 import React from 'react';
-import { Button, Card, Tooltip } from 'react-bootstrap';
-import { Pie, PieChart } from 'recharts';
+import { Button, Card, Table } from 'react-bootstrap';
+import { Pie, PieChart, Tooltip } from 'recharts';
 
 const Portfolio = () => {
     const data01 = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 300 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
-        { name: 'Group E', value: 278 },
-        { name: 'Group F', value: 189 },
+        { name: 'Bike', value: 400 },
+        { name: 'Bus', value: 300 },
+        { name: 'Scooter', value: 300 },
+        { name: 'Taxi', value: 200 },
+        { name: 'Train', value: 278 },
+        { name: 'Ambulance', value: 189 },
       ];
       
     return (
@@ -42,8 +42,41 @@ const Portfolio = () => {
             fill="#8884d8"
             label="name"
           />
+          <Tooltip />
         </PieChart>
       
+</div>
+<div>
+<h1 className="text-center text-success">Our Instructors</h1>
+<Table striped bordered hover>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td colSpan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</Table>
 </div>
         </div>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Button, Carousel, Col, Form, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 import Service from '../Service/Service';
 
 const Home = () => {
@@ -11,13 +12,19 @@ const Home = () => {
         .then(res => res.json())
         .then(data => setServices(data))
     },[]);
+
+
+    const history = useHistory();
+    const handleCourseClick = () =>{
+history.push('/allservices')
+    }
     return (
 
 
 // slider with login form
         <div>
             <Carousel className="mt-5 mb-5">
-  <Carousel.Item interval={1000}>
+  <Carousel.Item interval={5000}>
     <img
       className="d-block w-75 mx-auto"
       src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2019/10/Driver-Eye-Movement-MOTR-Story-10-22-19.png"
@@ -82,6 +89,7 @@ const Home = () => {
 </Carousel>
 
 {/* services start */}
+<h3 className="text-success text-center">Our Courses</h3>
 <div>
       <div class="row row-cols-1 row-cols-md-2 m-0 gy-5">
 {
@@ -89,6 +97,9 @@ const Home = () => {
 }
  
       </div>
+     <div className="d-flex justify-content-center m-5">
+     <Button onClick={handleCourseClick} variant="outline-info">More courses</Button>{' '}
+     </div>
 </div>
 
         </div>
