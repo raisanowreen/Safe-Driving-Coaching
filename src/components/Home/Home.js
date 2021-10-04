@@ -6,6 +6,7 @@ import { useHistory } from 'react-router';
 import Service from '../Service/Service';
 
 const Home = () => {
+    // fetching services api from local file
     const [services, setServices] = useState([])
     useEffect(() =>{
         fetch('./services.JSON')
@@ -13,14 +14,12 @@ const Home = () => {
         .then(data => setServices(data))
     },[]);
 
-
+// adding dynamic event handler
     const history = useHistory();
     const handleCourseClick = () =>{
 history.push('/allservices')
     }
     return (
-
-
 // slider with login form
         <div>
             <Carousel className="mt-5 mb-5">
@@ -84,7 +83,6 @@ history.push('/allservices')
     <Carousel.Caption className="text-warning">
       <h3>If you know you are driving to your death –would you still drive so fast?</h3>
     </Carousel.Caption>
-   
   </Carousel.Item>
 </Carousel>
 
@@ -92,6 +90,7 @@ history.push('/allservices')
 <h3 className="text-success text-center">Our Courses</h3>
 <div>
       <div class="row row-cols-1 row-cols-md-2 m-0 gy-5">
+          {/* sending dynamic props */}
 {
     services.slice(0, 4).map(service => <Service service={service}></Service> )
 }
@@ -101,7 +100,6 @@ history.push('/allservices')
      <Button onClick={handleCourseClick} variant="outline-info">More courses</Button>{' '}
      </div>
 </div>
-
         </div>
     );
 };

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Service from '../Service/Service';
 
 const Services = () => {
+    // loading dynamic data from props & destructuring
     const [services, setServices] = useState([])
     useEffect(() =>{
         fetch('./services.JSON')
@@ -11,12 +12,12 @@ const Services = () => {
         .then(data => setServices(data))
     },[]);
     return (
+         // displaying data 
         <div>
       <div class="row row-cols-1 row-cols-md-2 m-0 gy-5">
 {
     services.map(service => <Service service={service}></Service> )
 }
- 
       </div>
 </div>
     );
