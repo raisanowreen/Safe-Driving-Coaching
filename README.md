@@ -1,6 +1,6 @@
 # Safe Driving School
 
-This project was bootstrapped with [Create React App](https://wonderful-bohr-eb8e29.netlify.app/).
+This project was bootstrapped with [Create React App](https://safe-driving-coaching.netlify.app/).
 
 ## Project introduction
 
