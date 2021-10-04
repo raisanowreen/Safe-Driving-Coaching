@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Button, CardGroup, Carousel, Col, Form, Row } from 'react-bootstrap';
+import { Button, Carousel, Col, Form, Row } from 'react-bootstrap';
 import Service from '../Service/Service';
-import Services from '../Service/Service';
 
 const Home = () => {
     const [services, setServices] = useState([])
@@ -110,15 +109,12 @@ const Home = () => {
 
 {/* services start */}
 <div>
-<div class="row row-cols-1 row-cols-md-2 m-0 gy-5">
+      <div class="row row-cols-1 row-cols-md-2 m-0 gy-5">
 {
     services.slice(0, 4).map(service => <Service service={service}></Service> )
 }
  
       </div>
-
-
-
 </div>
 
         </div>

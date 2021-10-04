@@ -9,7 +9,7 @@ const Header = () => {
           <Container>
             <Navbar.Brand href="/home">Home</Navbar.Brand>
             <Navbar.Brand href="/about">About</Navbar.Brand>
-            <Navbar.Brand href="/services">Services</Navbar.Brand>
+            <Navbar.Brand href="/allservices">Services</Navbar.Brand>
             <Navbar.Brand href="/portfolio">Portfolio</Navbar.Brand>
           </Container>
         </Navbar>
