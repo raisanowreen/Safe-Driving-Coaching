@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="mt-5">
             <Card className="text-black fw-bolder fs-4">
-  <Card.Img src="https://wallpaperaccess.com/full/1816873.jpg" alt="Card image" />
+  <Card.Img src="https://wallpaperaccess.com/full/1816873.jpg" height="1500px" alt="Card image" />
   <Card.ImgOverlay>
     <Card.Title className="text-warning text-center mt-5 fs-1">What we do</Card.Title>
     <Card.Text className="text-center mt-5">

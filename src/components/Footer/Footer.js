@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div>
             <Card className="bg-dark text-white mt-5">
-  <Card.Img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-blue-atmospheric-background-image_50584.jpg" height="320px" alt="Card image" />
+  <Card.Img src="https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-blue-atmospheric-background-image_50584.jpg" height="340px" alt="Card image" />
   <Card.ImgOverlay>
     <div className="d-flex justify-content-around">
       <div>
